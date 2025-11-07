@@ -10,8 +10,9 @@ export function renderLogin() {
         <label>Password<input type="password" name="password" required /></label>
         <button type="submit">Sign in</button>
       </form>
-      <p class="muted">Admin: admin@nexlibra.local / admin123 <br>
-Student: student1@college.edu / student123</p>
+      <p class="muted">Admin: admin@nexlibra.local / admin123
+      Student: aiml001@college.edu / student123
+      [ cse , ece , it , mech , aiml , iot , eee , ft , civil , biomed ]</p>
     </article>
   `;
   const form = document.getElementById('login-form');
@@ -28,6 +29,7 @@ Student: student1@college.edu / student123</p>
     }
   });
 }
+
 
 
 
