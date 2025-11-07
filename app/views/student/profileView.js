@@ -41,9 +41,10 @@ export function renderStudentProfile() {
     </article>
   `;
 
-  root.querySelectorAll('button[data-return]').forEach(btn => btn.addEventListener('click', () => {
-    try { db.returnBook(btn.dataset.return); renderStudentProfile(); } catch (e) { alert(e.message); }
-  }));
+  //root.querySelectorAll('button[data-return]').forEach(btn => btn.addEventListener('click', () => {
+  //  try { db.returnBook(btn.dataset.return); renderStudentProfile(); } catch (e) { alert(e.message); }
+  //}));
 }
+
 
 
