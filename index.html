@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NexLibra – Smart Library Management</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li>
+            <img src="assets/img/logo.png" alt="NexLibra" style="height:28px;width:auto;vertical-align:middle;margin-right:.5rem" onerror="this.remove()" />
+            <strong>NexLibra</strong>
+          </li>
+        </ul>
+        <ul id="nav-actions"></ul>
+        <ul id="nav-theme">
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container" id="app"></main>
+
+    <footer class="container center small muted" id="app-footer">
+      <span>© <span id="year"></span> NexLibra</span>
+    </footer>
+
+    <script type="module" src="app/main.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
+
